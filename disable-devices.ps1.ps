@@ -1,0 +1,6 @@
+$deviceName="HP E24m G4 USB Audio"
+foreach ($dev in (Get-PnpDevice | Where-Object{$_.Name -eq $deviceName})) {
+  &"pnputil" /remove-device $dev.InstanceId 
+}
+
+pnputil.exe /scan-devices
