@@ -1,11 +1,11 @@
 #Dessa behöver hämtas och installeras innan man kör scriptet
 
-#Connect-ExchangeOnline
-#Get-Module ImportExcel -ListAvailable | Import-Module -Force -Verbose
-
 #Install-Module ImportExcel -AllowClobber -Force
 #Import-Module ExchangeOnlineManagement
 #Install-Module ExchangeOnlineManagement
+
+#Get-Module ImportExcel -ListAvailable | Import-Module -Force -Verbose
+#Connect-ExchangeOnline
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
