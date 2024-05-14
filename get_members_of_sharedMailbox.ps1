@@ -11,7 +11,7 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 $form = New-Object System.Windows.Forms.Form
-$form.Text = 'Data Entry Form'
+$form.Text = 'Namn på gruppen'
 $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = 'CenterScreen'
 
@@ -34,7 +34,7 @@ $form.Controls.Add($cancelButton)
 $label = New-Object System.Windows.Forms.Label
 $label.Location = New-Object System.Drawing.Point(10,20)
 $label.Size = New-Object System.Drawing.Size(280,20)
-$label.Text = 'Please enter the information in the space below:'
+$label.Text = 'Skriv in namnet på gruppbrevlådan'
 $form.Controls.Add($label)
 
 $textBox = New-Object System.Windows.Forms.TextBox
